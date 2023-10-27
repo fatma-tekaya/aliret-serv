@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Skranji&display=swap');
+
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.imghome {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    opacity: 0.12;
+}
+
+.content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-align: center;
+
+}
+
+.content h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px var(--first-color);
+
+}
+
+.content p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: .1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content .btn {
+    color: var(--first-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: solid var(--first-color);
+    border-width: thin;
+}
+
+.content .btn:hover {
+    background-color: var(--first-color);
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        top: 50%;
+    }
+
+    .content h1 {
+        font-size: 2.1rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+}

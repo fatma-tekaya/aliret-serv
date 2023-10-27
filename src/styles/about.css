@@ -1,0 +1,11 @@
+.section-title h5 {
+    font-weight: 500;
+    color: var(--first-color);
+    font-size: 45px;
+    margin-left: 30px;
+    border-left: 5px solid var(--first-color);
+    padding-left: 0px;
+  }
+  .media a{
+    text-decoration: none;
+  }
